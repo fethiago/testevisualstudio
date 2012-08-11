@@ -15,5 +15,15 @@ namespace testevisual
         {
             InitializeComponent();
         }
+
+        private void adiciona_Click(object sender, EventArgs e)
+        {
+            lista.Items.Add(comprar.Text);
+        }
+
+        private void apaga_Click(object sender, EventArgs e)
+        {
+          
+        }
     }
 }
