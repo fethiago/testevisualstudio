@@ -15,5 +15,15 @@ namespace testevisual
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listView1.Items.Add(textBox1.Text);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
