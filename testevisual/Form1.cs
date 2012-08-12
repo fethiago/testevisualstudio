@@ -18,12 +18,19 @@ namespace testevisual
 
         private void button1_Click(object sender, EventArgs e)
         {
-            listView1.Items.Add(textBox1.Text);
+            listBox1.Items.Add(textBox1.Text);
+            textBox1.Clear();
+            textBox1.Focus();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            int a = listBox1.Items.Count;
+
+            if (a == 0)
+                MessageBox.Show("A lista está Vazia!!! \n Adicione primeiro um item \n e depois selecione para remove-lo", "**Excluindo item da lista**", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                listBox1.Items.Remove(listBox1.SelectedItem);
         }
     }
 }
