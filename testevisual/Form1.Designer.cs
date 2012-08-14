@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.compra = new System.Windows.Forms.TextBox();
             this.adiciona = new System.Windows.Forms.Button();
             this.Conflito = new System.Windows.Forms.Button();
             this.lista = new System.Windows.Forms.ListBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -90,24 +92,23 @@
             this.lista.Size = new System.Drawing.Size(257, 176);
             this.lista.TabIndex = 5;
             // 
-            // panel1
+            // pictureBox1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.panel1.Location = new System.Drawing.Point(455, 52);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(84, 255);
-            this.panel1.TabIndex = 6;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(439, 11);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(344, 426);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.ClientSize = new System.Drawing.Size(579, 326);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(803, 449);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lista);
             this.Controls.Add(this.Conflito);
             this.Controls.Add(this.adiciona);
@@ -116,6 +117,7 @@
             this.Name = "Form1";
             this.Text = "Programa de Lista de Compras";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,7 +132,7 @@
         private System.Windows.Forms.Button adiciona;
         private System.Windows.Forms.Button Conflito;
         private System.Windows.Forms.ListBox lista;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
 
     }
 }
