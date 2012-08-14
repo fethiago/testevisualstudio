@@ -39,24 +39,27 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 24);
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(36, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 13);
+            this.label1.Size = new System.Drawing.Size(140, 21);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Para Comprar:";
+            this.label1.Text = "Para Comprar :";
             // 
             // compra
             // 
-            this.compra.Location = new System.Drawing.Point(33, 40);
+            this.compra.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.compra.Location = new System.Drawing.Point(25, 76);
             this.compra.Name = "compra";
-            this.compra.Size = new System.Drawing.Size(257, 20);
+            this.compra.Size = new System.Drawing.Size(257, 28);
             this.compra.TabIndex = 1;
             // 
             // adiciona
             // 
-            this.adiciona.Location = new System.Drawing.Point(315, 38);
+            this.adiciona.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adiciona.Location = new System.Drawing.Point(321, 51);
             this.adiciona.Name = "adiciona";
-            this.adiciona.Size = new System.Drawing.Size(75, 23);
+            this.adiciona.Size = new System.Drawing.Size(112, 53);
             this.adiciona.TabIndex = 2;
             this.adiciona.Text = "Adicionar";
             this.adiciona.UseVisualStyleBackColor = true;
@@ -64,9 +67,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(315, 288);
+            this.button2.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(321, 221);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(112, 82);
             this.button2.TabIndex = 4;
             this.button2.Text = "Apagar";
             this.button2.UseVisualStyleBackColor = true;
@@ -74,18 +78,21 @@
             // 
             // lista
             // 
+            this.lista.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lista.FormattingEnabled = true;
-            this.lista.Location = new System.Drawing.Point(33, 86);
+            this.lista.ItemHeight = 21;
+            this.lista.Location = new System.Drawing.Point(25, 131);
             this.lista.Name = "lista";
-            this.lista.Size = new System.Drawing.Size(257, 173);
+            this.lista.Size = new System.Drawing.Size(257, 172);
             this.lista.TabIndex = 5;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.panel1.Location = new System.Drawing.Point(449, 39);
+            this.panel1.Location = new System.Drawing.Point(455, 52);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(84, 296);
             this.panel1.TabIndex = 6;
