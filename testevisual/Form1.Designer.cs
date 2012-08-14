@@ -92,7 +92,7 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.panel1.Location = new System.Drawing.Point(455, 52);
+            this.panel1.Location = new System.Drawing.Point(456, 37);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(84, 296);
             this.panel1.TabIndex = 6;
@@ -110,6 +110,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Programa de Lista de Compras";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
