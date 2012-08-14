@@ -18,12 +18,30 @@ namespace testevisual
 
         private void adiciona_Click(object sender, EventArgs e)
         {
-            lista.Items.Add(comprar.Text);
+            lista.Items.Add(compra.Text);
         }
 
-        private void apaga_Click(object sender, EventArgs e)
-        {
+       
           
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lista.Items.Add(compra.Text);
+            compra.Clear();
+            compra.Focus();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int b = lista.Items.Count;
+
+            if (b == 0)
+                MessageBox.Show("A lista está Vazia!!! \n Adicione primeiro um item \n e depois selecione para remove-lo", "**Excluindo item da lista**", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+            {
+                
+                lista.Items.Remove(lista.SelectedItem);
+            }
         }
     }
 }
