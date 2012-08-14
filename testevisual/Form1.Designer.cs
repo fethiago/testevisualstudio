@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.compra = new System.Windows.Forms.TextBox();
             this.adiciona = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Conflito = new System.Windows.Forms.Button();
             this.lista = new System.Windows.Forms.ListBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
@@ -40,7 +40,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(36, 37);
+            this.label1.Location = new System.Drawing.Point(35, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(140, 21);
             this.label1.TabIndex = 0;
@@ -48,7 +48,9 @@
             // 
             // compra
             // 
+            this.compra.BackColor = System.Drawing.SystemColors.InfoText;
             this.compra.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.compra.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.compra.Location = new System.Drawing.Point(25, 76);
             this.compra.Name = "compra";
             this.compra.Size = new System.Drawing.Size(257, 28);
@@ -65,25 +67,27 @@
             this.adiciona.UseVisualStyleBackColor = true;
             this.adiciona.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // Conflito
             // 
-            this.button2.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(321, 221);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 82);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Apagar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Conflito.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Conflito.Location = new System.Drawing.Point(321, 221);
+            this.Conflito.Name = "Conflito";
+            this.Conflito.Size = new System.Drawing.Size(112, 82);
+            this.Conflito.TabIndex = 4;
+            this.Conflito.Text = "Apagar";
+            this.Conflito.UseVisualStyleBackColor = true;
+            this.Conflito.Click += new System.EventHandler(this.button2_Click);
             // 
             // lista
             // 
-            this.lista.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lista.BackColor = System.Drawing.SystemColors.InfoText;
+            this.lista.Font = new System.Drawing.Font("AR DESTINE", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lista.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.lista.FormattingEnabled = true;
-            this.lista.ItemHeight = 21;
+            this.lista.ItemHeight = 43;
             this.lista.Location = new System.Drawing.Point(25, 131);
             this.lista.Name = "lista";
-            this.lista.Size = new System.Drawing.Size(257, 172);
+            this.lista.Size = new System.Drawing.Size(257, 176);
             this.lista.TabIndex = 5;
             // 
             // panel1
@@ -94,22 +98,24 @@
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.panel1.Location = new System.Drawing.Point(455, 52);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(84, 296);
+            this.panel1.Size = new System.Drawing.Size(84, 255);
             this.panel1.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(579, 380);
+            this.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.ClientSize = new System.Drawing.Size(579, 326);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lista);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Conflito);
             this.Controls.Add(this.adiciona);
             this.Controls.Add(this.compra);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Programa de Lista de Compras";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,7 +128,7 @@
        
         private System.Windows.Forms.TextBox compra;
         private System.Windows.Forms.Button adiciona;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Conflito;
         private System.Windows.Forms.ListBox lista;
         private System.Windows.Forms.Panel panel1;
 
