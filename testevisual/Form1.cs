@@ -40,9 +40,15 @@ namespace testevisual
                 MessageBox.Show("A lista está Vazia!!! \n Adicione primeiro um item \n e depois selecione para remove-lo", "**Excluindo item da lista**", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
             {
-                dialogo = MessageBox.Show("Deseja realmente excluir?", "Excluir?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if(dialogo == System.Windows.Forms.DialogResult.Yes)
-                lista.Items.Remove(lista.SelectedItem);
+                int c = lista.SelectedItems.Count;
+                if (c > 0)
+                {
+                    dialogo = MessageBox.Show("Deseja realmente excluir?", "Excluir?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (dialogo == System.Windows.Forms.DialogResult.Yes)
+                        lista.Items.Remove(lista.SelectedItem);
+                }
+                else
+                    MessageBox.Show("Selecione um item para excluir", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
