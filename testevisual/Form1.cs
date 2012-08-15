@@ -64,7 +64,13 @@ namespace testevisual
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            lista.Items.Clear();
+            if (MessageBox.Show("Deseja Realmente excluir todos os itens da lista", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                lista.Items.Clear();
+            }
+           
+
+            
         }
     }
 }
