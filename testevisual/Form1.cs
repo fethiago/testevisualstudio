@@ -33,13 +33,15 @@ namespace testevisual
 
         private void button2_Click(object sender, EventArgs e)
         {
+            DialogResult dialogo;
             int b = lista.Items.Count;
 
             if (b == 0)
                 MessageBox.Show("A lista está Vazia!!! \n Adicione primeiro um item \n e depois selecione para remove-lo", "**Excluindo item da lista**", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
             {
-                 
+                dialogo = MessageBox.Show("Deseja realmente excluir?", "Excluir?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if(dialogo == System.Windows.Forms.DialogResult.Yes)
                 lista.Items.Remove(lista.SelectedItem);
             }
         }
@@ -47,6 +49,16 @@ namespace testevisual
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            lista.Items.Clear();
         }
     }
 }

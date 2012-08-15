@@ -35,6 +35,7 @@
             this.Conflito = new System.Windows.Forms.Button();
             this.lista = new System.Windows.Forms.ListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +73,7 @@
             // Conflito
             // 
             this.Conflito.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Conflito.Location = new System.Drawing.Point(321, 221);
+            this.Conflito.Location = new System.Drawing.Point(321, 146);
             this.Conflito.Name = "Conflito";
             this.Conflito.Size = new System.Drawing.Size(112, 82);
             this.Conflito.TabIndex = 4;
@@ -94,8 +95,6 @@
             // 
             // pictureBox1
             // 
-
-           
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(439, 11);
             this.pictureBox1.Name = "pictureBox1";
@@ -103,7 +102,17 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
-
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(321, 252);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(112, 55);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Limpar Tudo";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form1
             // 
@@ -111,6 +120,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ClientSize = new System.Drawing.Size(803, 449);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lista);
             this.Controls.Add(this.Conflito);
@@ -119,10 +129,9 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Programa de Lista de Compras";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
-
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,6 +147,7 @@
         private System.Windows.Forms.Button Conflito;
         private System.Windows.Forms.ListBox lista;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
 
     }
 }
